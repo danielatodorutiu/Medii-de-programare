@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#f1c170"
+	android:orientation="vertical">
+
+	<Button
+		android:id="@+id/buttonCreateUser"
+		android:gravity="center_vertical"
+		android:layout_height= "wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Connect as a manager"
+		android:textColor="#ffff"
+		android:background="@android:color/holo_green_dark"
+		android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true"/>
+
+	
+	<ImageView
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="80px"
+        android:minHeight="80px"
+		android:gravity="center_vertical"
+		android:layout_above="@+id/buttonCreateUser"
+		android:id="@+id/imageView1"
+	/>
+</RelativeLayout>

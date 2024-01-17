@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_weight="40"
+        android:background="@color/daniela_background">
+    
+
+    <Refractored.Controls.CircleImageView
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:id="@+id/circleImageView1"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"/>
+    
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_below="@+id/circleImageView1"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/bgr_white"
+            android:text="Honey Management"
+            /> 
+
+    </RelativeLayout>
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:layout_weight="60"
+    android:padding="10dp">
+
+          <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:id="@+id/fullNameText"/>
+
+          <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:id="@+id/phoneText"/>
+
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:id="@+id/emailText"/>
+
+         <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/passwordText"/>
+           
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:text="Register"
+                android:textColor="@color/bgr_white"
+                android:background="@color/text_yellow"
+                android:layout_centerInParent="true"
+                android:id="@+id/registerPUserButton"/>
+
+        </RelativeLayout>
+    
+    </LinearLayout>
+
+</LinearLayout>

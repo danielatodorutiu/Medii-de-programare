@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ 
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollMainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="1.0"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="10dp">
+                    <RelativeLayout
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:layout_width="0dip"
+                        android:background="@color/denisa_message_background_color">
+                        <TextView
+                            android:text="Honey Management"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textChoose"
+                            android:textColor="@color/text_yellow"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentTop="true" />
+                        
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:layout_width="0dip"
+                        android:background="@color/denisa_message_background_color">
+                       
+                        <Refractored.Controls.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:id="@+id/circleImageView1"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp"/>
+                         
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp">
+                    <TextView
+                        android:text="Manage your honey stock"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textParkTitle"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/h2_text_size"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_yellow" />
+                </RelativeLayout>
+                
+                         <Button
+                            android:id="@+id/buttonManageHoney"
+                            android:gravity="center"
+                            android:typeface="sans"
+                            android:textColor="@color/actionbar_blue"
+                    android:background="@color/text_yellow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:textAllCaps="true"
+                            android:layout_gravity="center"
+                            android:text="Honey Management"
+                         android:paddingRight="15dp"
+                            android:paddingLeft="15dp"
+                            android:layout_centerHorizontal="true"
+                            />
+                       
+                
+               
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+   
+    
+</LinearLayout>

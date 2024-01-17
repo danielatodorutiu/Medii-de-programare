@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_yellow">
+
+  <LinearLayout
+		android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:weightSum="100"
+        android:orientation="horizontal" >
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+      android:textColor="@color/bgr_black"
+      android:text="Name"
+      android:layout_weight="30"
+      android:id="@+id/label2_name"
+      android:gravity="left"
+	/>
+
+    <EditText
+        android:id="@+id/txtNume"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="90"
+        android:hint="Enter product name"
+     
+          
+		/>
+  </LinearLayout>
+
+  <LinearLayout
+		android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:weightSum="100"
+        android:orientation="horizontal" >
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textColor="@color/bgr_black"
+      android:textStyle="bold"
+      android:text="Cantitate"
+      android:layout_weight="30"
+      android:id="@+id/label3_cantitate"
+      android:gravity="left"
+	/>
+    <EditText
+		android:id="@+id/txtCantitate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+		android:layout_weight="90"
+	    android:hint="Enter cantity"
+        android:inputType="number"
+		/>
+  </LinearLayout>
+
+	 <LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		
+		>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Alege un magazin"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:paddingLeft="10sp"
+		 />
+		<Spinner
+			android:id="@+id/spinnerMagazine"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		/>
+	</LinearLayout>
+
+  <LinearLayout
+		android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:weightSum="100"
+		android:paddingTop="30dp"
+        android:orientation="horizontal" >
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textColor="@color/bgr_black"
+      android:textStyle="bold"
+      android:text="Click here to insert"
+      android:layout_weight="30"
+      android:id="@+id/label4"
+      android:gravity="left"
+	/>
+
+
+    <Button
+			android:text="Insert"
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+			android:textColor="@color/bgr_white"
+			android:background="@android:color/holo_green_dark"
+			android:layout_weight="50"
+			android:id="@+id/btnInsert"
+		   
+		/>
+  </LinearLayout>
+
+	
+
+
+</LinearLayout>
